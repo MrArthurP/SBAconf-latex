@@ -1,0 +1,236 @@
+\section{Procedimento para submissão}
+
+A seguir, algumas subseções são apresentadas. 
+% Next we see a few subsections.
+
+\subsection{Estágio de Revisão}
+
+Para a submissão, siga as instruções do sistema de submissão de artigos e do
+{\em site} do evento. 
+
+% For submission guidelines, follow instructions on paper submission
+% system as well as the event website.
+
+Note que conferências impõem limites estritos para o número de páginas.
+Portanto, é melhor prepara sua submissão inicial no formato final, 
+tendo assim uma estimativa acurada to tamanho do artigo. Assim, o
+esforço para adequar o formato da submissão final será mínimo. 
+
+%Note that conferences impose strict page limits, so it will be better
+%for you to prepare your initial submission in the camera ready layout
+%so that you will have a good estimate for the paper
+%length. Additionally, the effort required for final submission will be
+%minimal.
+
+\subsection{Equações}
+
+
+
+Após apresentar uma equação, por exemplo, 
+\begin{equation} \label{eq:sample}
+\frac{\partial F}{\partial t} = \frac{D \partial^2 F}{\partial x^2}, 
+\end{equation}
+algumas palavras podem ser necessárias para descrever a equação~\eqref{eq:sample},
+se houver tempo e espaço suficientes. 
+
+% Some words might be appropriate describing equation~(\ref{eq:sample}), if 
+% we had but time and space enough. 
+
+Veja \cite{Abl:56}, \cite{AbTaRu:54}, \cite{Keo:58} e \cite{Pow:85}. 
+
+\subsubsection{Exemplo.} 
+
+Esta equação vai muito além do celebrado teorema do grande Pitágoras.
+
+% This equation goes far beyond the
+% celebrated theorem ascribed to the great Pythagoras by his followers.
+Alguns ambientes como teorema, lema, corolário e prova estão definidos no preâmbulo 
+do arquivo {\tt sbaconf.tex}. Por exemplo, para inserir um lema, utilize
+\if\portugues1
+\begin{verbatim}
+\begin{lema}
+O quadrado da hipotenusa é igual à soma dos 
+quadrados dos catetos em um triângulo retângulo.
+\end{lema}
+\end{verbatim}
+resultando em
+\begin{lema}   % use the thm environment for theorems
+	O quadrado da hipotenusa é igual à soma dos quadrados dos catetos em um triângulo retângulo. 
+% The square of the length of the hypotenuse of a right triangle equals
+% the sum of the squares of the lengths of the other two sides.
+\end{lema}
+\else
+\begin{verbatim}
+\begin{lem}
+O quadrado da hipotenusa é igual à soma dos 
+quadrados dos catetos em um triângulo retângulo.
+\end{lem}
+\end{verbatim}
+resultando em
+\begin{lem}   % use the thm environment for theorems
+	O quadrado da hipotenusa é igual à soma dos quadrados dos catetos em um triângulo retângulo. 
+% The square of the length of the hypotenuse of a right triangle equals
+% the sum of the squares of the lengths of the other two sides.
+\end{lem}
+\fi
+
+Para inserir uma prova, utilize
+\if\portugues1
+\begin{verbatim}
+\begin{prova}
+Em um triângulo retângulo, a soma do quadrado 
+dos catetos (lados menores) é igual ao quadrado 
+da bipotenusa (lado maior). 
+\end{prova}
+\end{verbatim}
+resultando em
+
+\begin{prova}    % and the pf environment for proofs
+Em um triângulo retângulo, a soma do quadrado dos catetos (lados menores) é igual ao quadrado da bipotenusa (lado maior). 
+\end{prova}
+\else
+\begin{verbatim}
+\begin{pf}
+Em um triângulo retângulo, a soma do quadrado 
+dos catetos (lados menores) é igual ao quadrado 
+da bipotenusa (lado maior). 
+\end{pf}
+\end{verbatim}
+resultando em
+
+\begin{pf}    % and the pf environment for proofs
+Em um triângulo retângulo, a soma do quadrado dos catetos (lados menores) é igual ao quadrado da bipotenusa (lado maior). 
+\end{pf}
+\fi
+
+Caso queira criar um novo ambiente, por exemplo, definição, siga o modelo dos ambientes 
+criados previamente.
+
+%% There are a number of predefined theorem-like environments in
+%% ifacconf.cls:
+%%
+%% \begin{thm} ... \end{thm}            % Theorem
+%% \begin{lem} ... \end{lem}            % Lemma
+%% \begin{claim} ... \end{claim}        % Claim
+%% \begin{conj} ... \end{conj}          % Conjecture
+%% \begin{cor} ... \end{cor}            % Corollary
+%% \begin{fact} ... \end{fact}          % Fact
+%% \begin{hypo} ... \end{hypo}          % Hypothesis
+%% \begin{prop} ... \end{prop}          % Proposition
+%% \begin{crit} ... \end{crit}          % Criterion
+
+%Of course LaTeX manages equations through built-in macros. You may
+%wish to use the \texttt{amstex} package for enhanced math
+%capabilities.
+
+É claro, todos os recursos do {\LaTeX} para o tratamento de equações podem
+ser utilizados para melhorar a apresentação. 
+
+\subsection{Figuras}
+
+Para inserir figuras, use o pacote \texttt{graphicx}. Outros pacotes podem
+também ser usados, porém  \texttt{graphicx} é um dos mais simples. Veja
+a Figura~\ref{fig:bifurcation} como exemplo. 
+
+%To insert figures, use the \texttt{graphicx} package. Although other
+%graphics packages can also be used, \texttt{graphicx} is simpler to
+%use. See  Fig.~\ref{fig:bifurcation} for an example.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=8.4cm]{bifurcation.eps}    % The printed column width is 8.4 cm.
+\caption{Bifurcação: Máximos locais de $x$ com o amortecimento $a$ decrescendo.} 
+\label{fig:bifurcation}
+\end{center}
+\end{figure}
+
+Figuras devem ser centralizadas, e ter uma legenda abaixo. 
+% Figures must be centered, and have a caption at the bottom. 
+
+\subsection{Tabelas}
+
+Tabelas devem ser centralizadas, ter uma legenda acima e ser numeradas em arábicos.
+Veja a Tabela~\ref{tb:margins} para um exemplo. 
+
+%Tables must be centered and have a caption above them, numbered with
+%Arabic numerals. See table~\ref{tb:margins} for an example.
+
+\begin{table}[hb]
+\begin{center}
+\caption{Margens.}\label{tb:margins}
+\begin{tabular}{cccc}
+Página & Topo & Baixo & Esquerda/Direita \\\hline
+Primeira & 3,5 & 2,5 & 1,5 \\
+Demais & 2,5 & 2,5 & 1,5 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Estágio Final}
+
+Espera-se que os autores respeitem as margens diligentemente. 
+Os artigos precisam receber o logo com a data do evento e numeração para
+posterior inclusão nos Anais. Se o seu manuscrito viola as margens, você será
+chamado a preparar uma nova versão (podendo atrasar a preparação dos Anais), ou 
+poderá mesmo ser excluído dos Anais. 
+
+%Authors are expected to mind the margins diligently.  Papers need to
+%be stamped with event data and paginated for inclusion in the
+%proceedings. If your manuscript bleeds into margins, you will be
+%required to resubmit and delay the proceedings preparation in the
+%process.
+
+\subsubsection{Margens nas páginas.} Veja a Tabela~\ref{tb:margins} 
+para as especificações de margem. Todas as dimensões são em 
+\emph{centímetros}.
+
+
+\subsection{Criação do PDF}
+
+Todas as fontes devem estar incluídas no arquivo PDF. Use uma das seguintes
+ferramentas para produzir um PDF de boa qualidade: 
+%All fonts must be embedded/subsetted in the PDF file. Use one of the
+%following tools to produce a good quality PDF file:
+
+\subsubsection{PDFLaTeX} 
+é uma versão especial do \LaTeX, de Han The
+Thanh, que produz o PDF diretamente do arquivo \texttt{tex} usando fontes do Tipo-1,
+sem passar pelo arquivo \texttt{dvi} padrão. Aceita figuras nos formatos JPEG, PNG e PDF,
+mas não PostScript. Figuras produzidas em PostScript encapsulado (EPS) podem
+ser convertidas em PDF, por exemplo, com a ferramenta \texttt{epstopdf} ou
+com o Adobe Acrobat
+Distiller.
+
+
+%is a special version of LaTeX by Han The
+%Thanh which produces PDF output directly using Type-1 fonts instead of
+%the standard \texttt{dvi} file. It accepts figures in JPEG, PNG, and PDF
+%formats, but not PostScript. Encapsulated PostScript figures can be
+%converted to PDF with the \texttt{epstopdf} tool or with Adobe Acrobat
+%Distiller.
+
+\subsubsection{Gerar o PDF a partir do PostScript} 
+é a meneira clássica de produzir arquivos PDF do \LaTeX. Os passos são: 
+
+%is the classical way of
+%producing PDF files from LaTeX. The steps are:
+
+\begin{enumerate}
+  \item Produza um arquivo \texttt{dvi} rodando \texttt{latex} duas vezes. 
+%  Produce a \texttt{dvi} file by running \texttt{latex} twice.
+  \item Produza um arquivo PostScript (\texttt{ps}) com \texttt{dvips}.
+  %  Produce a PostScript (\texttt{ps}) file with \texttt{dvips}.
+  \item Produza um arquivo PDF com \texttt{ps2pdf} ou Adobe Acrobat
+  Distiller.
+%  Produce a PDF file with \texttt{ps2pdf} or Adobe Acrobat
+%  Distiller.
+\end{enumerate}
+
+\subsection{Copyright}
+
+A SBA ou os organizadores do congresso devem requerer, no momento devido, 
+um formulário de transferência de {\em Copyright}. Mais informações serão
+dadas no {\em site} do congresso.
+%IFAC will put in place an electronic copyright transfer system in due
+%course. Please \emph{do not} send copyright forms by mail or fax. More
+%information on this will be made available on IFAC website.

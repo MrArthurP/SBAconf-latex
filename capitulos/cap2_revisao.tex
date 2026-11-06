@@ -1,0 +1,140 @@
+\section{Unidades}
+
+Use preferencialmente unidades do Sistema Internacional (SI). Outras unidades
+podem ser utilizadas como unidades secundárias (entre parênteses). Isto se aplica
+em armazenamento de dados. Escreva,
+por exemplo,  ``$15\,\mathrm{Gb}/\mathrm{cm}^2$ ($100\,\mathrm{Gb}/\mathrm{in}^2$)''. 
+Uma exceção é quando unidades inglesas são usadas na identificação de algum item
+comercial, como ``disco de 3.5 polegadas''. Evite misturar unidades SI com outras, 
+como por exemplo corrente elétrica em amperes e campo magnético em oersteds. 
+Isso frequentemente causa confusão, pois as equações não batem dimensionalmente. 
+Se você realmente precisar usar unidades mistas, deixe claro as unidades para cada
+termo em uma equação. A unidade SI para força do campo magnético 
+$\mathbf{H}$ é $\mathrm{A}/\mathrm{m}$. No entanto, se você quiser utilizar unidades
+de  $\mathrm{T}$, 
+refira-se à densidade de fluxo magnético $\mathbf{B}$ ou
+força do campo magnético simbolizada por $\mu_0\,\mathbf{H}$. 
+Use um ponto centralizado para separar unidades compostas, p. ex.,  
+``$\mathrm{A} \cdot \mathrm{m}^2$''.
+
+%Use SI as primary units. Other units may be used as secondary units
+%(in parentheses). This applies to papers in data storage. For example,
+%write ``$15\,\mathrm{Gb}/\mathrm{cm}^2$ ($100\,\mathrm{Gb}/\mathrm{in}^2$)''. 
+%An exception is when
+%English units are used as identifiers in trade, such as ``3.5 in
+%disk drive''. Avoid combining SI and other units, such as current in
+%amperes and magnetic field in oersteds. This often leads to confusion
+%because equations do not balance dimensionally. If you must use mixed
+%units, clearly state the units for each quantity in an equation.  The
+%SI unit for magnetic field strength $\mathbf{H}$ is $\mathrm{A}/\mathrm{m}$. However, if you wish to
+%use units of $\mathrm{T}$, either refer to magnetic flux density $\mathbf{B}$ or
+%magnetic field strength symbolized as $\mu_0\,\mathbf{H}$. Use the center dot to
+%separate compound units, e.g., ``$\mathrm{A} \cdot \mathrm{m}^2$''.
+
+\section{Dicas Úteis}
+
+\subsection{Figuras e Tabelas}
+
+Legendas dos eixos das figuras são frequentemente uma fonte de confusões. Use
+palavras ao invés de símbolos. Por exemplo, escreva a quantidade ``Magnetização'',
+ou ``Magnetização M'', não apenas ``M''. Coloque unidades entre parênteses. Não marque
+os eixos apenas com unidades ou quantidades. Por exemplo, escreva 
+``Temperatura ($\mathrm{K}$)'', não ``$\mbox{Temperature}/\mathrm{K}$''.
+
+Multiplicandos podem ser especialmente confusos. Escreva  ``Magnetização 
+($\mathrm{kA}/\mathrm{m}$)'' ou ``Magnetização ($10^3 \mathrm{A}/\mathrm{m}$)''. 
+Não escreva 
+``Magnetização $(\mathrm{A}/\mathrm{m}) \times 1000$'' pois o leitor não saberá
+se a legenda do eixo significa 
+$16000\,\mathrm{A}/\mathrm{m}$ ou $0.016\,\mathrm{A}/\mathrm{m}$.
+
+%Figure axis labels are often a source of confusion. Use words rather
+%than symbols. As an example, write the quantity ``Magnetization'', or
+%``Magnetization M'', not just ``M''. Put units in parentheses. Do not
+%label axes only with units.  For example, write ``Magnetization
+%($\mathrm{A}/\mathrm{m}$)'' or ``Magnetization ($\mathrm{A} \mathrm{m}^{-1}$)'', not just
+% ``$\mathrm{A}/\mathrm{m}$''. Do not
+%label axes with a ratio of quantities and units. For example, write
+%``Temperature ($\mathrm{K}$)'', not ``$\mbox{Temperature}/\mathrm{K}$''.
+%
+%Multipliers can be especially confusing. Write ``Magnetization
+%($\mathrm{kA}/\mathrm{m}$)'' or ``Magnetization ($10^3 \mathrm{A}/\mathrm{m}$)''. Do not write
+%``Magnetization $(\mathrm{A}/\mathrm{m}) \times 1000$'' because the reader would not know
+%whether the axis label means $16000\,\mathrm{A}/\mathrm{m}$ or $0.016\,\mathrm{A}/\mathrm{m}$.
+
+\subsection{Referências}
+
+Use referências no estilo Harvard (veja no final deste documento). Com
+\LaTeX, você pode processar uma base externa de dados bibliográficos 
+usando \texttt{bibtex},\footnote{Nesse caso, você também vai precisar do arquivo \texttt{ifacconf.bst}, que é parte do pacote \texttt{ifacconf\_latex.zip}} ou então inserir
+as referências diretamente na seção correspondente. Evite as notas de rodapé.
+Por favor, note que o estilo preferido de referências é o que se encontra no
+final deste documento. Artigos que não foram publicados devem ser citados 
+como ``unpublished''. Use maiúscula apenas na primeira palavra do título
+do artigo, exceto para nomes próprios, acrônimos e símbolos. Todos os autores
+devem ser explicitados nos artigos. Note que você pode citar com \texttt{\textbackslash cite\{label\}} quando a citação fizer parte do texto ou com \texttt{\textbackslash citep\{label\}}.
+
+%Use Harvard style references (see at the end of this document). With
+%\LaTeX, you can process an external bibliography database 
+%using \texttt{bibtex},\footnote{In this case you will also need the \texttt{ifacconf.bst}
+%file, which is part of the \texttt{ifaconf} package.}
+%or insert it directly into the reference section. Footnotes should be avoided as
+%far as possible.  Please note that the references at the end of this
+%document are in the preferred referencing style. Papers that have not
+%been published should be cited as ``unpublished''.  Capitalize only the
+%first word in a paper title, except for proper nouns and element
+%symbols.
+
+\subsection{Abreviações e Acrônimos}
+
+Defina as abreviações e os acrônimos na primeira ocorrência do texto do artigo, 
+mesmo se foram definidos no abstract. Abreviações conhecidas, como SI ou SBA, não
+precisam ser definidas. Abreviações que incorporam pontos não devem conter espaços
+(escreva ``C.N.R.S.'', não ``C. N. R. S.''). Não use abreviações no título, exceto
+se forem inevitáveis. 
+%Define abbreviations and acronyms the first time they are used in the
+%text, even after they have already been defined in the
+%abstract. Abbreviations such as IFAC, SI, ac, and dc do not have to be
+%defined. Abbreviations that incorporate periods should not have
+%spaces: write ``C.N.R.S.'', not ``C. N. R. S.'' Do not use abbreviations
+%in the title unless they are unavoidable (for example, ``IFAC'' in the
+%title of this article).
+
+\subsection{Equações}
+
+Numere as equações de forma consecutiva, com números entre parênteses
+encostados no lado direito da
+margem, como em~\eqref{eq:sample}. Para tornar suas equações mais compactas,
+você pode usar $/$, a função $\exp$, ou expoentes apropriados. Use parênteses para
+evitar ambiguidades. Pontue as equações quando estas forem parte do texto, como em
+%Number equations consecutively with equation numbers in parentheses
+%flush with the right margin, as in (\ref{eq:sample}).  To make your equations more
+%compact, you may use the solidus ($/$), the $\exp$ function, or
+%appropriate exponents. Use parentheses to avoid ambiguities in
+%denominators. Punctuate equations when they are part of a sentence, as
+%in
+
+\begin{multline} 
+\int_0^{r_2}  F (r, \varphi ) dr d\varphi =  [\sigma r_2 / (2 \mu_0 )] \\
+\times   \int_0^{\infty} \exp(-\lambda |z_j - z_i |) \lambda^{-1} J_1 (\lambda  r_2 ) J_0 (\lambda r_i ) d\lambda 
+\label{eq:sample2}
+\end{multline}
+
+Certifique-se que os símbolos em sua equação tenham sido previamente definidos (ou defina-se imediatamente depois). Símbolos devem aparecer em itálico ($T$ pode
+se referir à temperatura, mas T é a unidade tesla). 
+Refira-se a ``(\ref{eq:sample})'', não ``Eq. (\ref{eq:sample})'' ou ``equação
+(\ref{eq:sample})'', exceto no começo de uma frase: ``Equação~(\ref{eq:sample}) é \ldots''. 
+%might refer to temperature, but T is the unit tesla). 
+%Be sure that the symbols in your equation have been defined before the
+%equation appears or immediately following. Italicize symbols ($T$
+%might refer to temperature, but T is the unit tesla). Refer to
+%``(\ref{eq:sample})'', not ``Eq. (\ref{eq:sample})'' or ``equation
+%(\ref{eq:sample})'', except at the beginning of a sentence: ``Equation
+%(\ref{eq:sample}) is \ldots''.
+
+\subsection{Outras Recomendações}
+
+Deixe um espaço após pontos e vírgulas. 
+Uma afirmação entre parênteses no final de uma sentença é pontuada exteriormente
+(assim). (Uma frase entre parênteses é pontuada internamente.) Evite contrações
+(por exemplo, ``prá'' chegar ao resultado --- use ``para'').
